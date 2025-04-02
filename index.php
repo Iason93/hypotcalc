@@ -1,7 +1,7 @@
 <?php
 
-$a=3;
+$a=5;
 
-$b=2;
+$b=4;
 
 echo hypot($a, $b);
