@@ -36,6 +36,7 @@ jobs:
 
     - name: Report Status
       run: |
-        echo
+        echo "# Deployment status: ${{ job.status }}" >> $GITHUB_STEP_SUMMARY
+        echo "# Deployed ${{ github.ref }} to ${{  steps.deployment.outputs.page.url }}" >> $GITHUB_STEP_SUMMARY
     
     
