@@ -30,5 +30,12 @@ jobs:
 
     - name: Upload artifact
       uses: actions/upload-artifacts@v3
+      with:
+        #Upload entire repository
+        path: "."
+
+    - name: Report Status
+      run: |
+        echo
     
     
