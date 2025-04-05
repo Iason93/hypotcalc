@@ -34,6 +34,10 @@ jobs:
         #Upload entire repository
         path: "."
 
+    - name: Deploy to Github Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
+
     - name: Report Status
       run: |
         echo "# Deployment status: ${{ job.status }}" >> $GITHUB_STEP_SUMMARY
